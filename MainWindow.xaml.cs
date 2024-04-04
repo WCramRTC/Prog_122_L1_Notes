@@ -14,6 +14,9 @@ namespace Prog_122_L1_Notes
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+    // Wiliam Cram
+    // Hi from Programming 122
     public partial class MainWindow : Window
     {
         public MainWindow()
