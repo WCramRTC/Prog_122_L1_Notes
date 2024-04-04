@@ -1,87 +1,35 @@
 # Programming 122 Notes
 
-- What is wpf
-- How do we upload
-Certainly! Arrays in C# are used to store a fixed-size sequential collection of elements of the same type. They provide a convenient way to work with collections of data.
+## Creating a WPF Application
+1. Open Visual Studio 2022
+2. Click "Create New Project"
+3. Select WPF Application ( you can search for this is the search bar at the top"
+4. Give your project a name
+5. Click next at the Framework window
+6. You should now have a WPF Application
 
-Here's a breakdown of C# arrays along with code snippets:
+## Adding GitHub to your Project
+1. Click "View -> Git Changes" on the ribbon on the top of your project. ( Where Menu, Files, Build, etc... are )
+2. A new window on the right hand side should appear. Click on the "Create Git Repository" button
+3. In the new window
+   - CHECK the "Add README.md" check box
+   - Sign in to your GitHub account
+   - UNCHECK the "Private Repository" check box
+   - Click "Create and Push"
+   - If it all works properly, then git changes should changes to a small message box.
+   - Reach out on teams with ANY questions. This can be tricky to setup the first time.
 
-1. **Declaring Arrays:**
-   You can declare an array by specifying the type of elements it will hold followed by square brackets `[]` and the name of the array. You can also initialize the array with specific values using curly braces `{}`.
+## Viewing your GitHub Repository onlin
+1. In the "Git Changes" window, click on the little 3 dot  button located in the upper right hand corner
+2. Select "View in Browswer"
+3. This should bring you right to your repository online
+4. The url for this webpage is the one you will submit for your assignments
 
-   ```csharp
-   // Declaration and initialization of an integer array
-   int[] numbers = { 1, 2, 3, 4, 5 };
-
-   // Declaration of an array without initialization
-   int[] anotherArray;
-   ```
-
-2. **Accessing Elements:**
-   You can access individual elements of an array using indexing. The index starts from 0 for the first element and goes up to `Length - 1`.
-
-   ```csharp
-   // Accessing elements of the array
-   int firstElement = numbers[0]; // Accessing the first element
-   int thirdElement = numbers[2]; // Accessing the third element
-   ```
-
-3. **Array Length:**
-   You can get the length of the array using the `Length` property.
-
-   ```csharp
-   // Getting the length of the array
-   int length = numbers.Length; // Length of the numbers array
-   ```
-
-4. **Iterating Through Arrays:**
-   You can use loops like `for` or `foreach` to iterate through the elements of an array.
-
-   ```csharp
-   // Using a for loop to iterate through the array
-   for (int i = 0; i < numbers.Length; i++)
-   {
-       Console.WriteLine(numbers[i]);
-   }
-
-   // Using a foreach loop to iterate through the array
-   foreach (int num in numbers)
-   {
-       Console.WriteLine(num);
-   }
-   ```
-
-5. **Modifying Elements:**
-   You can modify elements of an array by assigning new values to them.
-
-   ```csharp
-   // Modifying elements of the array
-   numbers[1] = 10; // Modifying the second element to 10
-   ```
-
-6. **Multidimensional Arrays:**
-   C# also supports multidimensional arrays, allowing you to create arrays with more than one dimension.
-
-   ```csharp
-   // Declaration and initialization of a 2D array
-   int[,] matrix = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
-
-   // Accessing elements of a 2D array
-   int element = matrix[0, 1]; // Accessing the element at row 0, column 1
-   ```
-
-7. **Jagged Arrays:**
-   Jagged arrays are arrays of arrays. Each element of a jagged array can be an array itself.
-
-   ```csharp
-   // Declaration and initialization of a jagged array
-   int[][] jaggedArray = new int[3][];
-   jaggedArray[0] = new int[] { 1, 2, 3 };
-   jaggedArray[1] = new int[] { 4, 5 };
-   jaggedArray[2] = new int[] { 6, 7, 8, 9 };
-
-   // Accessing elements of a jagged array
-   int value = jaggedArray[1][0]; // Accessing the element at index 0 of the second array
-   ```
-
-Arrays in C# are powerful and versatile data structures that are extensively used in various programming scenarios. They provide efficient storage and retrieval of data elements.
+## Updating your GitHub repo project
+As you work on your project you will be saving and making changes. While these are saved locally, they are not updated online automitcally. To do this do the following.
+1. In your "Git Changes" window, type a message in the text box. ( Git is a callobration tool for teams, and this message is used to help keep track of changes happening to code"
+2. Below you will see a button that says "Commit All". You want to PRESS THE LITTLE ARROW  NEXT TO THIS BUTTON. You will get a small menu of options.
+3. CLICK "Commit All and Push"
+4. If it works the list of files under changes will disappear
+5. Check your repoistory online to see your changes reflected.
+6. Reach out with any questions.
